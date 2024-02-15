@@ -21,7 +21,11 @@ ctable {
 .ctable tr:nth-child(even) {
   background-color: #acddbf;
 }
-
+.notable
+{
+  font-style: bold;
+  background-color:rgba(255, 167, 40, 0.4);
+}
 no {
   color: red;
   font-style: italic;
