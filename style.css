@@ -19,7 +19,7 @@ ctable {
 }
 
 .ctable tr:nth-child(even) {
-  background-color: #f1f9f9;
+  background-color: #aaaaaa;
 }
 
 no {
