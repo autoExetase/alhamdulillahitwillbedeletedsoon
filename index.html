@@ -2,91 +2,94 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
-  <title>Comparison</title>
-  <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <title>Comparison</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="stupidsidebarthing.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>A comparison of various free website hosting providers</h1>
-  </header>
-  <h2><strong>Please refer to the table below.</strong></h2>
-  <li>None of this is accurate, I'm an idiot and procrastinated on this for years. I got most information about GitLab from a forum thread from 2018 (6 years ago)</li>
-  <li>The inaccuracy makes it just like all of the comparisons you can find on the internet.</li>
-  <table class=ctable>
-    <thead>
-      <tr>
-        <th style="width:50%"><b>Features</b></th>
-        <th>Netlify (netlify.com)</th>
-        <th>Gitlab Pages (gitlab.com)</th>
-        <th>Github Pages (github.com)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Bandwidth</td>
-        <td>100GB/mo. free</td>
-        <td class="notable">No limit (fair use)</td>
-        <td>100GB/mo. soft limit</td>
-      </tr>
-      <tr>
-        <td>Storage</td>
-        <td class="notable">100GB</td>
-        <td>10GB</td>
-        <td>1GB repo limit, 1GB <no>hard page limit</no></td>
-      </tr>
-      <tr>
-        <td>Sites</td>
-        <td>500 pages</td>
-        <td class="notable">No limit</td>
-        <td>One user/organisation page, unlimited project pages</td>
-      </tr>
-      <tr>
-        <td>Analytics</td>
-        <td class="notable"><no>Paid</no></td>
-        <td><no>Paid tier only</no></td>
-        <td><no>No</no></td>
-      </tr>
-      <tr>
-        <td>Serverless functions</td>
-        <td class="notable">125k/mo.</td>
-        <td><no>Paid tier only</no></td>
-        <td><no>No</no></td>
-      </tr>
-      <tr>
-        <td>Builds</td>
-        <td>Automatic (300CM/mo.)</td>
-        <td class="notable">400 build minutes/mo., can use own CI "runner"</td>
-        <td>10 per hour limit. CI/CD using GitHub actions</td>
-      </tr>
-      <tr>
-        <td>Custom domain</td>
-        <td class="notable">Yes</td>
-        <td class="notable">Yes</td>
-        <td class="notable">Yes</td>
-      </tr>
-      <tr>
-        <td>Other features</td>
-        <td class="notable">Global network, users with authentication, large media storage, rollback, dynamic pages</td>
-        <td>Self-hosting on your own hardware possible, open source, static pages</td>
-        <td><no>It's Microsoft. GitHub Pages always records visitors' IP addresses (similarly to most websites anyway)</no></td>
-      </tr>
-    </tbody>
-  </table>
-  <div id="sidenav" class="snv">
-      <s href="javascript:void(0)" class="close" onclick="close()">&times;</s>
-      <s href="#">God damn</s>
-      <s href="#">This tutorial site</s>
-      <s href="#">Teaches you nothing</s>
-      <s href="#">Straight up</s>
-      <s href="#">Add html</s>
-      <s href="#">Add css</s>
-      <s href="#">Add js</s>
-      <s href="#">I feel better if I copy it manually</s>
-      </div>
-  <span onclick="open()">○</span>
+
+    <div id="snv" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closesidenav()">×</a>
+        <a href="#">God damn</a>
+        <a href="#">This tutorial site</a>
+        <a href="#">I feel better if I copy it manually</a>
+        <a href="#">why does't it work.'</a>
+        <a href="#">Well of course, I am stupid</a>
+        <a href="#">close() just closes the document</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer;" onclick="opensidenav()">○ Open menu</span>
+
+
+    <header>
+        <h1>A comparison of various free website hosting providers</h1>
+    </header>
+    <h2><strong>Please refer to the table below.</strong></h2>
+    <li>None of this is accurate, I'm an idiot and procrastinated on this for years. I got most information about GitLab from a forum thread from 2018 (6 years ago)</li>
+    <li>The inaccuracy makes it just like all of the comparisons you can find on the internet.</li>
+    <table class=ctable>
+        <thead>
+            <tr>
+                <th style="width:50%"><b>Features</b></th>
+                <th>Netlify (netlify.com)</th>
+                <th>Gitlab Pages (gitlab.com)</th>
+                <th>Github Pages (github.com)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bandwidth</td>
+                <td>100GB/mo. free</td>
+                <td class="notable">No limit (fair use)</td>
+                <td>100GB/mo. soft limit</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td class="notable">100GB</td>
+                <td>10GB</td>
+                <td>1GB repo limit, 1GB <no>hard page limit</no></td>
+            </tr>
+            <tr>
+                <td>Sites</td>
+                <td>500 pages</td>
+                <td class="notable">No limit</td>
+                <td>One user/organisation page, unlimited project pages</td>
+            </tr>
+            <tr>
+                <td>Analytics</td>
+                <td class="notable"><no>Paid</no></td>
+                <td><no>Paid tier only</no></td>
+                <td><no>No</no></td>
+            </tr>
+            <tr>
+                <td>Serverless functions</td>
+                <td class="notable">125k/mo.</td>
+                <td><no>Paid tier only</no></td>
+                <td><no>No</no></td>
+            </tr>
+            <tr>
+                <td>Builds</td>
+                <td>Automatic (300CM/mo.)</td>
+                <td class="notable">400 build minutes/mo., can use own CI "runner"</td>
+                <td>10 per hour limit. CI/CD using GitHub actions</td>
+            </tr>
+            <tr>
+                <td>Custom domain</td>
+                <td class="notable">Yes</td>
+                <td class="notable">Yes</td>
+                <td class="notable">Yes</td>
+            </tr>
+            <tr>
+                <td>Other features</td>
+                <td class="notable">Global network, users with authentication, large media storage, rollback, dynamic pages</td>
+                <td>Self-hosting on your own hardware possible, open source, static pages</td>
+                <td><no>It's Microsoft. GitHub Pages always records visitors' IP addresses (similarly to most websites anyway)</no></td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 
 </html>
