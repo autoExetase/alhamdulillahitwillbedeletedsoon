@@ -55,3 +55,38 @@ a {
 a:hover {
   border-bottom: 0;
 }
+
+.snv {
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:#444444;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+}
+
+.snv s {
+    padding: 8px 8px 8px 24px;
+    text-decoration:none;
+    font-size:25px;
+    color:#ebebeb;
+    display:block;
+    transition:0.3s;
+}
+
+.snv s:hover {
+    color:#acddbf;
+    transition:0.4s;
+}
+
+.snv .close {
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:30px;
+    margin-left:50px;
+}
